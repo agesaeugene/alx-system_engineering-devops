@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Listenning ports are displayed by this bashscript
+# Listenning sockets are shown
+# The PID and the name of the program to which each soket belongs is shown
+
+sudo netstart -1 -p

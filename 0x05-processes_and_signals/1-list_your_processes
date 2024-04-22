@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A script written in Bash that shows the list of active processes
+
+ps -auxf
