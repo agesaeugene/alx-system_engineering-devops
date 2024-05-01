@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# server login
+
+# setting up an agent
+eval $("ssh-agent")
+
+# path to store ssh
+ssh-add ~/.old-ssh/school
+
+ssh ubuntu@107.23.171.145
