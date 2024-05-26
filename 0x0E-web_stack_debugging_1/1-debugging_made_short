@@ -9,3 +9,4 @@ service nginx restart
 
 # terminating the first nginx process
 kill "$(pgrep 'nginx' | head -1)"
+

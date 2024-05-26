@@ -9,3 +9,4 @@ In -a /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
 # Reatsrting the nginx server
 service nginx restart
+
