@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# installing the load balancer
+# install load balancer
 
 
 echo -e "Updating and doing some minor checks...\n"
@@ -22,7 +22,7 @@ install haproxy #install haproxy
 
 echo -e "\nSetting up some minor stuff.\n"
 
-# backup default server of the config file
+# backup for default server config file
 sudo cp /etc/haproxy/haproxy.cfg haproxy_default.backup
 
 server_config=\
@@ -44,10 +44,10 @@ backend eugenedevops
     server 109527-web-02 35.153.67.206:80 check
 "
 
-# shellcheck disable=SC2154
+# shellcheck checking disable=SC2154
 echo "$server_config" | sudo dd status=none of=/etc/haproxy/haproxy.cfg
 
-# enable haproxy to be started by init script
+# enable haproxy to be started by the init script
 echo "ENABLED=1" | sudo dd status=none of=/etc/default/haproxy
 
 echo "configured - Roundrobin On web-01 & web-02"
@@ -57,4 +57,8 @@ if [ "$(pgrep -c haproxy)" -le 0 ]; then
 else
         sudo service haproxy restart
 fi
+
+echo -e "web-01 web-02"
+echo "web-01"
+echo "web-02"
 
