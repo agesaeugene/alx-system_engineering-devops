@@ -40,8 +40,8 @@ frontend eugenedevops
 
 backend eugenedevops
     balance roundrobin
-    server 109527-web-01 54.160.108.103:80 check
-    server 109527-web-02 52.3.248.22:80 check
+    server 109527-web-01 54.88.121.94:80 check
+    server 109527-web-02 35.153.67.206:80 check
 "
 
 # shellcheck disable=SC2154
