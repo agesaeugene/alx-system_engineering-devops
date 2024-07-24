@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Runnimg the the ubuntu terminal as another user
+
+sudo -u $1 whoami
