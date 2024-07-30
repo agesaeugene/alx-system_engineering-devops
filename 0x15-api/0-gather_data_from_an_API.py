@@ -2,8 +2,9 @@
 """
 Return to-do list information of a given employee
 
-This script retrieves the associated user data and to-do list from the JSONPlaceholder
-API in response to an employee ID entered as a command line parameter.
+This script retrieves the associated user data and to-do
+list from the JSONPlaceholder API in response to an 
+employee ID entered as a command line parameter.
 The accomplished duties by the employee are then printed.
 
 """
