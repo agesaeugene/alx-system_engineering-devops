@@ -6,7 +6,6 @@ This script retrieves the associated user data and to-do
 list from the JSONPlaceholder API in response to an 
 employee ID entered as a command line parameter.
 The accomplished duties by the employee are then printed.
-
 """
 import requests
 import sys
